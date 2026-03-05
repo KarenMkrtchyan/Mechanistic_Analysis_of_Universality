@@ -1,6 +1,13 @@
-# Understanding universality across different families of LLMs by exploring internal circuits
+# Mechanistic Analysis Of Universality: Numerical Comparison Circuits Across Transformer Architectures
 
-This is the code for an upcoming paper about the universality theorem examed under mechanistic interpretability
+### TL;DR: 
+We study the internal circuit structures of pretrained transformers on numerical comparison taks and whether these circuits are universal across models of different families and size.
+
+### Abstract
+Transformer language models reliably achieve high accuracy on many reasoning tasks; however, their internal mechanisms are not fully understood. Mechanistic interpretability seeks to remedy this gap by identifying task circuits within individual models, but it is unclear whether such circuits generalize across model families and scales. In this work, we study the universality of circuits through the lens of numerical comparisons, a simple and controlled task that enables clean and causal interventions. We conduct experiments on a set of transformer models spanning different families and sizes from 1.7b to 9b parameters. We find that models within the Qwen family exhibit a highly consistent circuit structure across architecture and scale, featuring localized attention heads that write a task relevant signal. In contrast, models from other families show qualitatively different implementations, where task relevant information emerges much earlier and is distributed across components as opposed to being concentrated within a small set of attention heads. These results serve as evidence that task behavior similarities do not imply mechanistic universality and highlight the necessity for cross model comparisons to claim generalization of internal circuits.
+
+### Link to publication 
+Accepted to LIT Workshop @ ICLR 2026: https://openreview.net/forum?id=79igg0kRtd&noteId=mSsda8vUhv
 
 ## Setup
 
